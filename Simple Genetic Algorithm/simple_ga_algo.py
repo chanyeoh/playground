@@ -67,7 +67,8 @@ class HelloWorldGA(GeneticAlgorithm):
 
 	def create_new_population_subset(self, chromosome1, chromosome2):
 		chromosome_subset = []
-		chromsome_list = [(chromosome1, chromosome2), (chromosome2, chromosome1)]
+		chromsome_list = [(chromosome1, chromosome2), \
+							(chromosome2, chromosome1)]
 
 		for k in range(0, self.STRONGEST_POPULATION):
 			for c in chromsome_list:
