@@ -128,6 +128,6 @@ class HelloWorldGA(GeneticAlgorithm):
 	def cleanup(self):
 		print("Clean up")
 
-
-helloWorldGA = HelloWorldGA()
-helloWorldGA.process()
+if __name__ == "__main__":
+	helloWorldGA = HelloWorldGA()
+	helloWorldGA.process()
